@@ -7,17 +7,27 @@
   // font-size: 26px;
   // letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  @media screen and (max-width: 767px) {
+    @include font($fs: 24px, $fw: 700, $lh: 28px, $ls: 0.03em);
+  }
 }
 .logo__second-part-logo {
   color: var(--logo-color);
+  @media screen and (max-width: 767px) {
+    @include font($fs: 24px, $fw: 700, $lh: 28px, $ls: 0.03em);
+  }
 }
 
 .footer-section__logo {
   color: var(--main-color);
+  @media screen and (max-width: 767px) {
+    @include font($fs: 24px, $fw: 700, $lh: 28px, $ls: 0.03em);
+  }
 }
 
-.logo {
-}
+// .logo {
+// }
 
 .page-navigation__logo {
   padding-top: 24px;
