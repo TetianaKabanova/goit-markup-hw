@@ -1,11 +1,14 @@
 .clients-list {
-  @extend %align;
-  column-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .clients-list__item {
   @extend %align;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid var(--social-icon-color-team);
@@ -16,6 +19,18 @@
   &:focus {
     border: 1px solid var(--accent-color);
     fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px / 3));
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px / 4));
+    width: 170px;
+    height: 92px;
   }
 }
 .clients-list__link {

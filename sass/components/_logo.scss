@@ -1,36 +1,33 @@
 .logo__first-part-logo,
 .logo__second-part-logo,
 .footer-section__logo {
+  @include font($fs: 24px, $fw: 700, $lh: 28px, $ls: 0.03em);
   font-family: var(--secondary-font);
-  @include font($fs: 26px, $fw: 700, $lh: 31px, $ls: 0.03em);
-  // font-weight: 700;
-  // font-size: 26px;
-  // letter-spacing: 0.03em;
   color: var(--accent-color);
 
-  @media screen and (max-width: 767px) {
-    @include font($fs: 24px, $fw: 700, $lh: 28px, $ls: 0.03em);
+  @media screen and (min-width: 1200px) {
+    @include font($fs: 26px, $fw: 700, $lh: 31px, $ls: 0.03em);
   }
 }
+
 .logo__second-part-logo {
   color: var(--logo-color);
-  @media screen and (max-width: 767px) {
-    @include font($fs: 24px, $fw: 700, $lh: 28px, $ls: 0.03em);
-  }
 }
 
 .footer-section__logo {
   color: var(--main-color);
-  @media screen and (max-width: 767px) {
-    @include font($fs: 24px, $fw: 700, $lh: 28px, $ls: 0.03em);
-  }
 }
 
-// .logo {
-// }
+.page-navigation__logo {
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
 
-// .page-navigation__logo {
-//   padding-top: 24px;
-//   padding-bottom: 25px;
-//   margin-right: 93px;
-// }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 92px;
+  }
+}
