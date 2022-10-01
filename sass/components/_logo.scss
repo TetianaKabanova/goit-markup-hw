@@ -41,4 +41,8 @@
 
 .address-box {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }

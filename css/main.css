@@ -325,6 +325,11 @@ body.modal-open {
 .address-box {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .address-box {
+    text-align: start;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -1006,14 +1011,12 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .clients-list__item {
-    flex-basis: calc((100% - 60px) / 3);
     width: 226px;
     height: 92px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-list__item {
-    flex-basis: calc(100% - 22.5px);
     width: 170px;
     height: 92px;
   }
@@ -1078,6 +1081,11 @@ body.modal-open {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .address-container {
+    justify-content: space-between;
+  }
+}
 
 .footer-list__item:not(:last-child) {
   margin-bottom: 9px;
@@ -1123,6 +1131,11 @@ body.modal-open {
 .footer-social-links {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-social-links {
+    text-align: start;
+  }
+}
 
 .subscribe-form__title {
   line-height: 1.14;
@@ -1137,6 +1150,11 @@ body.modal-open {
   width: 100%;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe-section {
+    align-items: flex-start;
+  }
+}
 
 .subscribe-form__field {
   display: flex;
@@ -1145,6 +1163,12 @@ body.modal-open {
   gap: 20px;
   align-items: center;
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__field {
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 
 .subscribe-form__input {
@@ -1168,9 +1192,21 @@ body.modal-open {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+    display: block;
+    margin: 0;
+  }
+}
 
 .subscribe-form {
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    width: auto;
+  }
 }
 
 .subscribe-form__label {
