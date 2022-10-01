@@ -260,7 +260,9 @@ body.modal-open {
   background: var(--accent-color);
   border: none;
   border-radius: 4px;
-  padding: 10px 24px;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
   transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
 .modal-open-btn:hover, .modal-open-btn:focus {
@@ -269,9 +271,9 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .modal-open-btn {
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.6153846154;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
     letter-spacing: 0.06em;
   }
 }
@@ -323,6 +325,10 @@ body.modal-open {
     padding-bottom: 25px;
     margin-right: 92px;
   }
+}
+
+.page-navigation .logo {
+  padding: 10px 0;
 }
 
 .logo {
@@ -627,12 +633,12 @@ body.modal-open {
 }
 
 .page-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 }
 
 .contact-mail,
 .contact-tel {
+  display: flex;
   color: var(--secondary-text-color);
 }
 .contact-mail:hover, .contact-mail:focus,
@@ -688,6 +694,7 @@ body.modal-open {
 }
 
 .menu__link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -928,7 +935,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
-    flex-basis: calc(100% - 15px);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1013,7 +1020,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .clients-list__item {
-    flex-basis: calc(100% - 20px);
+    flex-basis: calc((100% - 60px) / 3);
     width: 226px;
     height: 92px;
   }

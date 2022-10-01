@@ -60,12 +60,12 @@
 }
 
 .page-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 }
 
 .contact-mail,
 .contact-tel {
+  display: flex;
   color: var(--secondary-text-color);
 
   &:hover,
@@ -116,6 +116,7 @@
 }
 
 .menu__link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
