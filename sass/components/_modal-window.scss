@@ -8,10 +8,15 @@
   background-color: var(--main-color);
   padding: 40px;
 
+  @media screen and (min-width: 480px) {
+    max-width: auto;
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
-    max-width: 528px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
     min-height: 581px;
-    width: 100%;
   }
 }
 .close-modal-btn {

@@ -1,5 +1,5 @@
 .advantages-section {
-  padding-bottom: 0;
+  // padding-bottom: 0;
 }
 
 .feature {
@@ -24,6 +24,10 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .feature__descr {

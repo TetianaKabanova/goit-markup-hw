@@ -359,11 +359,18 @@ body.modal-open {
   background-color: var(--main-color);
   padding: 40px;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: auto;
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
     min-height: 581px;
-    width: 100%;
   }
 }
 
@@ -815,10 +822,6 @@ body.modal-open {
   }
 }
 
-.advantages-section {
-  padding-bottom: 0;
-}
-
 @media screen and (min-width: 768px) {
   .feature {
     display: flex;
@@ -847,6 +850,11 @@ body.modal-open {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .feature__title {
+    text-align: start;
+  }
+}
 
 .feature__descr {
   font-size: 14px;
@@ -869,11 +877,11 @@ body.modal-open {
 
 .about-section {
   display: none;
+  padding-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .about-section {
-    padding-top: 94px;
     display: block;
   }
   .box {

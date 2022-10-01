@@ -1,10 +1,10 @@
 .about-section {
   display: none;
+  padding-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .about-section {
-    padding-top: 94px;
     display: block;
   }
 
