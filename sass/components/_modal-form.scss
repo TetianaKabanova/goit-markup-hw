@@ -141,9 +141,13 @@
 
 .modal-form__policy,
 .modal-form__policy-link {
-  @include font($fs: 12px, $lh: 14px, $ls: 0.03em);
+  @include font($fs: 6px, $lh: 14px, $ls: 0.03em);
   color: var(--secondary-text-color);
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
 }
+
 .modal-form__policy-link {
   color: var(--accent-color);
 }

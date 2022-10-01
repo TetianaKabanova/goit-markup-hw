@@ -130,7 +130,7 @@
   color: var(--accent-color);
 }
 
-.current::after {
+.page-navigation .current::after {
   content: "";
   position: absolute;
   bottom: 0;
