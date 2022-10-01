@@ -30,6 +30,13 @@
   flex-direction: column;
   gap: 60px;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .footer-list__item {
@@ -122,6 +129,12 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
   }
 }
 .subscribe-form {
