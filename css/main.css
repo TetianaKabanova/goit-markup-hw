@@ -369,6 +369,7 @@ body.modal-open {
   .modal {
     top: 50%;
     transform: translate(-50%, -50%);
+    max-width: auto;
     width: 528px;
     min-height: 581px;
   }
@@ -739,7 +740,6 @@ body.modal-open {
 }
 
 .hero-overlay {
-  max-width: 480px;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
